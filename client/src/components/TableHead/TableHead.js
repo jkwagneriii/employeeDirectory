@@ -1,22 +1,22 @@
 import React from "react";
 
-function Card(props) {
+function TableHead(props) {
     
     return (
         <React.Fragment>
             <div className="container card">
                 <div className="row">
                     <div className="col-sm">
-                        IMAGE
+                        <h3>IMAGE</h3>
                     </div>
                     <div className="col-sm">
-                        NAME
+                        <h3 onClick={props.sortName()}>NAME</h3>
                     </div>
                     <div className="col-sm">
-                        EMAIL
+                        <h3>PHONE</h3>
                     </div>
                     <div className="col-sm">
-                        PHONE
+                        <h3>EMAIL</h3>
                     </div>
                 </div>
             </div>
@@ -25,4 +25,4 @@ function Card(props) {
 } 
 
 
-export default Card; 
+export default TableHead; 
