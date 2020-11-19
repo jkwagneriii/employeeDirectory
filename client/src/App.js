@@ -1,12 +1,12 @@
 import './App.css';
-import React, {useState, useEffect} from 'react'
-import axios from "axios";
+import React, {useState} from 'react'
+// import axios from "axios";
 // import Navbar from "./components/Navbar"
-// import EmployeeCard from "./components/EmployeeCard";
+import Card from "./components/Card";
 
 function App() {
 
-  const [employeeState, setEmployeeState] = useState ({
+  const [employeeState] = useState ({
     peeps: [
       {name: 'Jane', email: 'jane@example.com', phone: '888-888-8888'},
       {name: 'Bob', email: 'bob@example.com', phone: '555-555-5555'},
@@ -16,14 +16,14 @@ function App() {
     peepsArray: []
   })
 
-
+ 
 
   return (
     <div className="App">
       <header className="App-header">
         <p>Here ye find, React</p>
         <div>
-
+        <Card name={employeeState.name}/>
         </div>
       </header>
     </div>
