@@ -15,7 +15,8 @@ function App() {
     //I can use this for some sort of specific sorting, by last name for instance. 
     peepsArray: []
   })
-
+  
+  let something = employeeState.peeps
  
 
   return (
@@ -23,7 +24,9 @@ function App() {
       <header className="App-header">
         <p>Here ye find, React</p>
         <div>
-        <Card name={employeeState.name}/>
+          {something.map(() => {
+            return <Card name={something.name}/>
+          })}
         </div>
       </header>
     </div>
