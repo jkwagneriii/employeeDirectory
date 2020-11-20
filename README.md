@@ -3,6 +3,7 @@
 ## Table of Contents
 * Description
 * User Story
+* Business Context
 * Demo Link
 * Screenshot
 * Technology
@@ -10,11 +11,16 @@
 * Additional Questions   
 
 ## Description 
-Description here! 
+We all know that it feels like on the first day at a new job. You meet a million new faces and all the names go in one ear and out the other. By using this employee directory, you can cruise through the information about the people you work with.
+This application requires the UI to be broken up into components, manage component state, and respond to user events. 
 
 ## User Story
 
-* 
+* As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+
+## Business Context
+
+An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
 
 ## Demo Links 
 [Heroku](https://fathomless-lowlands-22110.herokuapp.com/)
@@ -25,7 +31,7 @@ Description here!
 ![image](./public/images/budgetPhoto.png)
 
 ## Technology
-React, Mongo, Mongoose, Github, Node, Express, Atlas, Heroku, HTML, CSS etc.
+React, Github, Node, Heroku, HTML, CSS etc.
 
 ## Sources
 

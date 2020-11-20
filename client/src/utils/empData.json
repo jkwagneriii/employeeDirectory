@@ -1,5 +1,4 @@
-{
-    "results": [
+[
         {
             "gender": "male",
             "name": {
@@ -2800,11 +2799,4 @@
             },
             "nat": "FR"
         }
-    ],
-    "info": {
-        "seed": "6b18711d93b7ab97",
-        "results": 50,
-        "page": 1,
-        "version": "1.3"
-    }
-}
+]

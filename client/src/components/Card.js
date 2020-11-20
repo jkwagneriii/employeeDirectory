@@ -1,22 +1,24 @@
 import React from "react";
+import './Card.css';
 
 function Card(props) {
+
     
     return (
         <React.Fragment>
             <div className="container card">
                 <div className="row">
                     <div className="col-sm">
-                        IMAGE
+                        <img src={props.image}></img>
                     </div>
                     <div className="col-sm">
-                        NAME
+                        {props.name}
                     </div>
                     <div className="col-sm">
-                        EMAIL
+                        {props.cell}
                     </div>
                     <div className="col-sm">
-                        PHONE
+                        {props.email}
                     </div>
                 </div>
             </div>

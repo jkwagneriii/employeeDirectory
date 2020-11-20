@@ -1,4 +1,5 @@
 import React from "react";
+import './TableHead.css';
 
 function TableHead(props) {
     
@@ -10,7 +11,7 @@ function TableHead(props) {
                         <h3>IMAGE</h3>
                     </div>
                     <div className="col-sm">
-                        <h3 onClick={props.sortName()}>NAME</h3>
+                        <h3 onClick={() => {props.sortName()}}>NAME</h3>
                     </div>
                     <div className="col-sm">
                         <h3>PHONE</h3>
