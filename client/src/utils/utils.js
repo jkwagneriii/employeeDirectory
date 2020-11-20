@@ -1,3 +1,4 @@
+//https://stackoverflow.com/questions/14653647/how-to-store-operator-in-variable-using-javascript
 
 var operators = {
     '+': function(a, b){

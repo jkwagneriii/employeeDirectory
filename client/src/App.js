@@ -1,6 +1,5 @@
 import './App.css';
 import React, {useState} from 'react'
-// import axios from "axios";
 import Navbar from "./components/Navbar"
 import TableHead from './components/TableHead/TableHead'
 import Card from "./components/Card";
@@ -35,28 +34,25 @@ function App() {
   })
 
  //https://stackoverflow.com/questions/47998188/how-to-sort-an-object-alphabetically-within-an-array-in-react-js 
- //The user will be able to click on the name button from the TableHead to flip flop the sorting of names alphabetically. Solution found working in class with Poornima and Alex.
+ //The user will be able to click on the name button from the TableHead to flip flop the sorting of names alphabetically.
  function sortName() {
-   console.log('SortName')
    let sortOrder
-   if(employeeState.asc === true) {
-    sortOrder = '+'
-   } else {
-     sortOrder = '-'
-   }
-
-   let tempPeeops = employeeState.peeps
-
-    if(employeeState.filtered.length > 0) {
-      tempPeeops = employeeState.filtered
+    if(employeeState.asc === true) {
+      sortOrder = '+'
+    } else {
+      sortOrder = '-'
     }
 
-   let sortedPeeps = tempPeeops.slice().sort(operators[sortOrder])
+   let tempPeeps = employeeState.peeps
+    if(employeeState.filtered.length > 0) {
+      tempPeeps = employeeState.filtered
+    }
+
+   //Be weary sort() modifies original array, avoid this by using slice()
+   let sortedPeeps = tempPeeps.slice().sort(operators[sortOrder])
 
    setState({...employeeState, asc: !employeeState.asc, filtered: sortedPeeps});
  };
-
- console.log('our state!!', employeeState)
 
  //There must be a variable to to store our data to display in so that we can change the state based on what the user is typing into the search bar
  let dataDisplay = employeeState.peeps
@@ -65,12 +61,10 @@ function App() {
    dataDisplay = employeeState.filtered
  }
  
-
-//  console.log('data to dispaly!!', dataDisplay)
   return (
     <div className="App">
         <Navbar />
-        <p>Here search ye, Employees: 
+        <p>Search Employee Name:  
         <input onChange={handleTyping}></input>
         </p>
         <TableHead sortName={sortName}/>

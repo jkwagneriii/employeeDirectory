@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <React.Fragment>
             <nav>
-                <span>EMPLOYEE DIRECTORY</span>
+                <span className="title">EMPLOYEE DIRECTORY</span>
             </nav>
         </React.Fragment>
     )
