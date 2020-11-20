@@ -7,12 +7,11 @@
 * Demo Link
 * Screenshot
 * Technology
-* Sources
 * Additional Questions   
 
 ## Description 
-We all know that it feels like on the first day at a new job. You meet a million new faces and all the names go in one ear and out the other. By using this employee directory, you can cruise through the information about the people you work with.
-This application requires the UI to be broken up into components, manage component state, and respond to user events. 
+ * We all know that it feels like on the first day at a new job. You meet a million new faces and all the names go in one ear and out the other. By using this employee directory, you can cruise through the information about the people you work with.
+ This application requires the UI to be broken up into components, manage component state, and respond to user events. 
 
 ## User Story
 
@@ -28,15 +27,10 @@ An employee or manager would benefit greatly from being able to view non-sensiti
 [Github](https://github.com/jkwagneriii/employeeDirectory)
 
 ## Screenshot
-![image](./public/images/budgetPhoto.png)
+![image](./client/public/directory.png)
 
 ## Technology
 React, Github, Node, Heroku, HTML, CSS etc.
-
-## Sources
-
-* [Example]()
-
 
 ## Additional Questions
 If you have any questions about the project, please reach out to Jake Wagner through [GitHub](https://github.com/jkwagneriii) or [LinkedIn](https://www.linkedin.com/in/jake-wagner-iii/)
